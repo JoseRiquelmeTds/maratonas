@@ -4,18 +4,18 @@ using namespace std;
 
 int main()
 {
-    int n; int h; int pode = 0;
-    cin >> n >> h;
+    int n; cin >> n;
+    int resp = 0;
 
     while (n--)
     {
         int x; cin >> x;
 
-        if (h>=x)
+        if (x != 1)
         {
-            pode++;
+            resp++;
         }
-    }
 
-    cout << pode << endl;
+    }
+    cout << resp;
 }
